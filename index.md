@@ -5,7 +5,8 @@
 ### Data Science projects
 
 [RFM Online Retail Sales](https://github.com/AninFreddy01/blossom_project/blob/master/LendingClub_Loan.ipynb)
-<img src="images/image1.jpg?raw=true"/>
+<br/>
+<img src="images/image1.jpg?"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
