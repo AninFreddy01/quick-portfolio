@@ -6,8 +6,8 @@
 
 [RFM Online Retail Sales](https://github.com/AninFreddy01/blossom_project/blob/master/LendingClub_Loan.ipynb)
 <br/>
-<img src="images/image1.jpg?" width="450" height="200"/>
-
+<img src="images/image1.jpg?" width="480" height="300"/>
+<br/>
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
