@@ -6,12 +6,12 @@
 
 [RFM Online Retail Sales](https://github.com/AninFreddy01/blossom_project/blob/master/LendingClub_Loan.ipynb)
 <br/>
-<img src="images/images.jpg?" width="480" height="300"/>
+<img src="images/download.jpg?" width="480" height="300"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
+[Loan Defaulters Analysis](https://github.com/AninFreddy01/blossom_project/blob/master/LendingClub_Loan.ipynb)
 <br/>
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/images.jpg?" width="480" height="300"/>
 
 ---
 [Project 3 Title](http://example.com/)
