@@ -15,6 +15,7 @@
 
 ---
 [Project 3 Title](http://example.com/)
+<br/>
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
