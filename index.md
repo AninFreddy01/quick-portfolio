@@ -4,29 +4,28 @@
 
 ### Data Science projects
 
-[RFM Online Retail Sales](https://github.com/AninFreddy01/blossom_project/blob/master/LendingClub_Loan.ipynb)
+[Recency Frequency Monetary(RFM) metrics](https://github.com/AninFreddy01/Blossom_Academy_ML_project/blob/master/RFM/RFM_OnlineRetail.ipynb)
 <br/>
 <img src="images/image4.jpg?" width="450" height="300"/>
 
 ---
-[Loan Defaulters Analysis](https://github.com/AninFreddy01/blossom_project/blob/master/LendingClub_Loan.ipynb)
+[Loan Defaulters Analysis](https://github.com/AninFreddy01/Blossom_Academy_ML_project/blob/master/project%204/lending_club_loan.ipynb)
 <br/>
-<img src="images/images.jpg?" width="450" height="300"/>
+<img src="images/image1.jpg?" width="450" height="300"/>
 
 ---
-[Project 3 Title](http://example.com/)
+[Billboard Music Top ranking](https://github.com/AninFreddy01/Blossom_Academy_ML_project/blob/master/project%201/billboard_music.ipynb)
 <br/>
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/image5.jpg?" width="450" height="300"/>
 
 ---
 
-### Category Name 2
+### Azure Data science project
 
-- [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
+- [Flight time of arrival](https://github.com/AninFreddy01/Azure_dataScience_project/blob/master/Flight%20Arrival/On-Time%20Flight%20Arrivals.ipynb)
+- [Climate change](https://github.com/AninFreddy01/Azure_dataScience_project/blob/master/cliamteChange/climateChange.ipynb)
+- [House pricing](https://github.com/AninFreddy01/Blossom_Academy_ML_project/blob/master/project%202/House_price.ipynb)
+
 
 ---
 
