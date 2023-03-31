@@ -1,0 +1,1250 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Privacy Policy</title>
+        <meta charset='utf-8'/>
+        <style>
+  
+:root
+{
+    --dark0:  #2e3440;
+    --dark1:  #3b4252;
+    --dark2:  #434c5e;
+    --dark3:  #4c566a;
+
+    --light0: #d8dee9;
+    --light1: #e5e9f0;
+    --light2: #eceff4;
+    --light3: #ffffff;
+
+    --frost0: #8fbcbb;
+    --frost1: #88c0d0;
+    --frost2: #81a1c1;
+    --frost3: #5e81ac;
+
+    --red:    #bf616a;
+    --orange: #d08770;
+    --yellow: #ebcb8b;
+    --green:  #a3be8c;
+    --purple: #b48ead;
+}
+
+.theme-dark
+{
+    --background-primary:         var(--dark0);
+    --background-primary-alt:     var(--dark0);
+    --background-secondary:       var(--dark1);
+    --background-secondary-alt:   var(--dark2);
+    --text-normal:                var(--light2);
+    --text-faint:                 var(--light0);
+    --text-muted:                 var(--light1);
+    --text-title-h1:              var(--red);
+    --text-title-h2:              var(--orange);
+    --text-title-h3:              var(--yellow);
+    --text-title-h4:              var(--green);
+    --text-title-h5:              var(--purple);
+    --text-title-h6:              var(--orange);
+    --text-link:                  var(--frost0);
+    --text-a:                     var(--frost3);
+    --text-a-hover:               var(--frost2);
+    --text-mark:                  rgba(136, 192, 208, 0.3); /* frost1 */
+    --pre-code:                   var(--dark1);
+    --text-highlight-bg:          rgba(163, 190, 140, 0.3); /* green */
+    --text-highlight-bg-active:   var(--green);
+    --interactive-accent:         var(--frost0);
+    --interactive-before:         var(--dark3);
+    --background-modifier-border: var(--dark2);
+    --text-accent:                var(--orange);
+    --interactive-accent-rgb:     var(--orange);
+    --inline-code:                var(--frost1);
+    --code-block:                 var(--frost1);
+    --vim-cursor:                 var(--orange);
+    --text-selection:             var(--dark3);
+    --text-tag:                   var(--frost0);
+    --task-checkbox:              var(--frost0);
+}
+.theme-light
+{
+    --background-primary:         var(--light3);
+    --background-primary-alt:     var(--light3);
+    --background-secondary:       var(--light2);
+    --background-secondary-alt:   var(--light1);
+    --text-normal:                var(--dark1);
+    --text-faint:                 var(--dark3);
+    --text-muted:                 var(--dark2);
+    --text-title-h1:              var(--red);
+    --text-title-h2:              var(--orange);
+    --text-title-h3:              var(--yellow);
+    --text-title-h4:              var(--green);
+    --text-title-h5:              var(--purple);
+    --text-title-h6:              var(--orange);
+    --text-link:                  var(--frost0);
+    --text-a:                     var(--frost3);
+    --text-a-hover:               var(--frost1);
+    --text-mark:                  rgba(136, 192, 208, 0.3); /* frost1 */
+    --pre-code:                   var(--light2);
+    --text-highlight-bg:          rgba(235, 203, 139, 0.6); /* yellow */
+    --text-highlight-bg-active:   var(--yellow);
+    --interactive-accent:         var(--frost0);
+    --interactive-before:         var(--light0);
+    --background-modifier-border: var(--light1);
+    --text-accent:                var(--orange);
+    --interactive-accent-rgb:     var(--orange);
+    --inline-code:                var(--frost1);
+    --code-block:                 var(--frost1);
+    --vim-cursor:                 var(--orange);
+    --text-selection:             var(--light0);
+    --text-tag:                   var(--frost2);
+    --task-checkbox:              var(--frost0);
+}
+
+:root {
+  --default-font: -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica, Arial, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji;
+
+  --editor-font: 'Hack Nerd Font', 'Source Code Pro',
+    ui-monospace, SFMono-Regular, SF Mono, Menlo,
+    Consolas, Liberation Mono, monospace;
+}
+
+.markdown-source-view {
+  font-family: var(--editor-font);
+}
+
+.markdown-preview-view {
+  font-family: var(--default-font);
+}
+
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"],
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"]
+{
+    text-shadow: none !important;
+    background-color: var(--pre-code) !important;
+}
+
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight
+{
+    color: var(--interactive-accent-rgb) !important;
+}
+.graph-view.color-text
+{
+    color: var(--text-a-hover) !important;
+}
+/*
+.graph-view.color-fill
+{
+    color: var(--background-secondary);
+}
+.graph-view.color-line
+{
+  color: var(--background-modifier-border);
+}
+*/
+
+html,
+body
+{
+    /* font-size: 16px !important; */
+}
+
+strong
+{
+    font-weight: 600 !important;
+}
+
+a,
+.cm-hmd-internal-link
+{
+    color: var(--text-a) !important;
+    text-decoration: none !important;
+}
+
+a:hover,
+.cm-hmd-internal-link:hover,
+.cm-url
+{
+    color: var(--text-a-hover) !important;
+    text-decoration: none !important;
+}
+
+a.tag, a.tag:hover {
+  color: var(--text-tag) !important;
+  background-color: var(--background-secondary-alt);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+mark
+{
+    background-color: var(--text-mark);
+}
+
+.titlebar {
+  background-color: var(--background-secondary-alt);
+}
+
+.titlebar-inner {
+  color: var(--text-normal);
+}
+
+.view-actions a
+{
+    color: var(--text-normal) !important;
+}
+
+.view-actions a:hover
+{
+    color: var(--text-a) !important;
+}
+
+.HyperMD-codeblock-bg
+{
+    background-color: var(--pre-code) !important;
+}
+
+.HyperMD-codeblock
+{
+    line-height: 1.4em !important;
+    color: var(--code-block) !important;
+}
+
+.HyperMD-codeblock-begin
+{
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}
+
+.HyperMD-codeblock-end
+{
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+
+th
+{
+    font-weight: 600 !important;
+}
+
+thead
+{
+    border-bottom: 2px solid var(--background-modifier-border) !important;
+}
+
+.HyperMD-table-row
+{
+    line-height: normal !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    /* background-color: var(--pre-code) !important; */
+}
+
+.HyperMD-table-row-0
+{
+    /* padding-top: 4px !important; */
+}
+
+.CodeMirror-foldgutter-folded,
+.is-collapsed .nav-folder-collapse-indicator
+{
+    color: var(--text-a) !important;
+}
+
+.nav-file-tag
+{
+    color: var(--text-a) !important;
+}
+
+.is-active .nav-file-title
+{
+    color: var(--text-a) !important;
+    background-color: var(--background-primary-alt) !important;
+}
+
+.nav-file-title
+{
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.HyperMD-list-line
+{
+    padding-top: 0 !important;
+}
+
+.cm-hashtag
+{
+    color: var(--text-tag) !important;
+}
+
+.search-result-file-matched-text
+{
+    color: var(--light3) !important;
+}
+
+.markdown-preview-section pre code,
+.markdown-preview-section code
+{
+    font-size: 0.9em !important;
+    background-color: var(--pre-code) !important;
+}
+
+.markdown-preview-section pre code
+{
+    padding: 4px !important;
+    line-height: 1.4em !important;
+    display: block !important;
+    color: var(--code-block) !important;
+}
+
+.markdown-preview-section code
+{
+    color: var(--inline-code) !important;
+}
+
+.cm-s-obsidian,
+.cm-inline-code
+{
+    -webkit-font-smoothing: auto !important;
+}
+
+.cm-inline-code
+{
+    color: var(--inline-code) !important;
+    background-color: var(--pre-code) !important;
+    padding: 1px !important;
+}
+
+.workspace-leaf-header-title
+{
+    font-weight: 600 !important;
+}
+
+.side-dock-title
+{
+    padding-top: 15px !important;
+    font-size: 20px !important;
+}
+
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover,
+.side-dock-ribbon-action.is-active:hover,
+.nav-action-button:hover,
+.side-dock-collapse-btn:hover
+{
+    color: var(--text-a);
+}
+
+.side-dock
+{
+    border-right: 0 !important;
+}
+
+.cm-s-obsidian,
+.markdown-preview-view
+{
+    /* padding-left: 10px !important; */
+    padding-right: 10px !important;
+}
+
+/* vertical resize-handle */
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle
+{
+    width: 1px !important;
+    background-color: var(--background-secondary-alt);
+}
+
+/* horizontal resize-handle */
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle
+{
+    height: 1px !important;
+    background-color: var(--background-secondary-alt);
+}
+
+/* Remove vertical split padding */
+.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
+.workspace-split.mod-vertical > .workspace-split,
+.workspace-split.mod-vertical > .workspace-leaf,
+.workspace-tabs
+{
+    padding-right: 0px;
+}
+
+.markdown-embed-title
+{
+    font-weight: 600 !important;
+}
+
+.markdown-embed
+{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.cm-header-1.cm-link,
+h1 a
+{
+    color: var(--text-title-h1) !important;
+}
+
+.cm-header-2.cm-link,
+h2 a
+{
+    color: var(--text-title-h2) !important;
+}
+
+.cm-header-3.cm-link,
+h3 a
+{
+    color: var(--text-title-h3) !important;
+}
+.cm-header-4.cm-link,
+h4 a
+{
+    color: var(--text-title-h4) !important;
+}
+.cm-header-5.cm-link,
+h5 a
+{
+    color: var(--text-title-h5) !important;
+}
+.cm-header-6.cm-link,
+h6 a
+{
+    color: var(--text-title-h6) !important;
+}
+
+.cm-header {
+    font-weight: 500 !important;
+}
+
+.HyperMD-header-1,
+.markdown-preview-section h1
+{
+    font-weight: 500 !important;
+    font-size: 2.2em !important;
+    color: var(--text-title-h1) !important;
+}
+
+.HyperMD-header-2,
+.markdown-preview-section h2
+{
+    font-weight: 500 !important;
+    font-size: 2.0em !important;
+    color: var(--text-title-h2) !important;
+}
+
+.HyperMD-header-3,
+.markdown-preview-section h3
+{
+    font-weight: 500 !important;
+    font-size: 1.8em !important;
+    color: var(--text-title-h3) !important;
+}
+
+.HyperMD-header-4,
+.markdown-preview-section h4
+{
+    font-weight: 500 !important;
+    font-size: 1.6em !important;
+    color: var(--text-title-h4) !important;
+}
+
+.HyperMD-header-5,
+.markdown-preview-section h5
+{
+    font-weight: 500 !important;
+    font-size: 1.4em !important;
+    color: var(--text-title-h5) !important;
+}
+
+.HyperMD-header-6,
+.markdown-preview-section h6
+{
+    font-weight: 500 !important;
+    font-size: 1.2em !important;
+    color: var(--text-title-h6) !important;
+}
+
+.suggestion-item.is-selected
+{
+    background-color: var(--background-secondary);
+}
+
+.empty-state-action:hover
+{
+    color: var(--interactive-accent);
+}
+
+.checkbox-container
+{
+    background-color: var(--interactive-before);
+}
+
+.checkbox-container:after
+{
+    background-color: var(--background-secondary-alt);
+}
+
+.mod-cta
+{
+    color: var(--background-secondary-alt) !important;
+    font-weight: 600 !important;
+}
+
+.mod-cta:hover
+{
+    background-color: var(--interactive-before) !important;
+    font-weight: 600 !important;
+}
+
+.CodeMirror-cursor
+{
+    background-color: var(--vim-cursor) !important;
+    opacity: 60% !important;
+}
+
+input.task-list-item-checkbox {
+    border: 1px solid var(--task-checkbox);
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input.task-list-item-checkbox:checked {
+    background-color: var(--task-checkbox);
+    box-shadow: inset 0 0 0 2px var(--background-primary);
+}
+
+.mermaid .note
+{
+    fill: var(--frost3) !important;
+}
+
+.setting-item-control input[type="text"] {
+    color: var(--text-normal);
+}
+.setting-item-control input[type="text"]::placeholder {
+    color: var(--dark3);
+}
+ .todoist-query-title {
+  display: inline;
+  font-size: 1.25em;
+}
+
+.todoist-refresh-button {
+  display: inline;
+  margin-left: 8px;
+  margin-right: 8px;
+  float: right;
+}
+
+.todoist-refresh-spin {
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.task-metadata {
+  margin-left: 30px;
+}
+
+.task-calendar-icon,
+.task-project-icon,
+.task-labels-icon {
+  vertical-align: middle;
+  height: 17px;
+  width: 17px;
+}
+
+.task-date.task-overdue {
+  color: var(--text-error);
+}
+
+.todoist-project {
+  white-space: normal;
+}
+
+.todoist-project .todoist-project {
+  margin-left: 20px;
+}
+
+.todoist-project .todoist-section {
+  margin-left: 20px;
+}
+
+.todoist-error {
+  background-color: rgb(var(--background-modifier-error-rgb), 0.5);
+  border: 1px solid var(--background-modifier-error);
+  padding: 0 10px 20px 10px;
+  margin-top: 20px;
+}
+
+.todoist-success {
+  border: 1px solid var(--background-modifier-border);
+  padding: 0 10px 20px 10px;
+  margin-top: 20px;
+}
+
+.todoist-task-content {
+  display: inline;
+}
+
+ul.todoist-task-list {
+  white-space: normal;
+}
+
+.markdown-reading-view .hide-in-reading-view {
+  display: none;
+}
+
+.is-live-preview .block-language-todoist {
+  padding-left: 15px;
+}
+ :root{--admonition-details-icon: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z'/></svg>");--admonition-margin-top: 1.5625em;--admonition-margin-bottom: var(--admonition-margin-top);--admonition-margin-top-lp: 0px;--admonition-margin-bottom-lp: 12px}.admonition{margin-top:var(--admonition-margin-top);margin-bottom:var(--admonition-margin-bottom);box-shadow:0 .2rem .5rem var(--background-modifier-box-shadow)}*:not(.is-live-preview) .admonition.no-content{display:none}.is-live-preview .admonition.no-content{opacity:.1}.admonition-title.no-title{display:none}.admonition-content,.callout-content{position:relative}.admonition.no-title .admonition-content{margin-top:0;margin-bottom:0}.admonition-content-copy{color:var(--text-faint);cursor:pointer;opacity:0;position:absolute;margin:.375rem;right:0;top:0;transition:.3s opacity ease-in}.admonition-content-copy:hover{color:var(--text-normal)}.admonition:hover .admonition-content-copy,.callout:hover .admonition-content-copy,.admonition-content-copy:hover{opacity:1}.admonition-title:hover+.admonition-content .admonition-content-copy{opacity:0}.admonition-settings .additional{margin:6px 12px}.admonition-settings .additional>.setting-item{border-top:0;padding-top:9px}.setting-item>.admonition{width:50%;margin:0}.unset-align-items{align-items:unset}.has-invalid-message{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;grid-template-areas:"text image" "inv inv"}input.is-invalid{border-color:#dc3545!important;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");background-repeat:no-repeat;background-position:right calc(0.375em + 0.1875rem) center;background-size:calc(0.75em + 0.375rem) calc(0.75em + 0.375rem)}.admonition-type-setting input{grid-column:span 2}.invalid-feedback{display:block;grid-area:inv;width:100%;margin-top:.25rem;font-size:.875em;color:#dc3545}.suggestion-content.admonition-icon{display:flex;align-items:center;justify-content:space-between;flex-flow:row wrap}.suggestion-content.admonition-icon>.suggestion-text.admonition-text{width:fit-content}.suggestion-content.admonition-icon>.suggestion-flair.admonition-suggester-icon{width:min-content;position:relative;top:unset;left:unset;right:unset;bottom:unset;display:flex;align-items:center}.suggestion-content.admonition-icon>.suggestion-note{width:100%}.admonition-suggester-icon svg{width:1em}.admonition-color-settings .setting-item-control{gap:1rem}.admonition-color-settings input[type=color]:disabled{opacity:.75;cursor:not-allowed}.admonition-convert{display:flex;align-items:center;gap:.25rem}.admonition-convert-icon{display:flex;align-items:center}.admonition-convert-icon .admonition-spin{animation:admonition-convert 1s ease-in-out infinite;fill:currentColor}@keyframes admonition-convert{0%{transform:rotate(-45deg)}to{transform:rotate(315deg)}}.admonition-settings .admonition-convert{color:var(--text-error)}.notice-container .admonition-convert{justify-content:space-between;gap:1rem}.admonition li.task-list-item.is-checked p{text-decoration:line-through}.admonition-settings .coffee{width:60%;color:var(--text-faint);margin:1rem auto;text-align:center}.admonition-settings .coffee img{height:30px}.admonition-file-upload{margin-right:0;margin-left:12px}.admonition-file-upload>input[type=file]{display:none}.insert-admonition-modal button:focus,.insert-admonition-modal .clickable-icon:focus{box-shadow:0 0 5px #0000007f;border-color:var(--background-modifier-border-focus)}.admonition-settings details>summary{outline:none;display:block!important;list-style:none!important;list-style-type:none!important;min-height:1rem;border-top-left-radius:.1rem;border-top-right-radius:.1rem;cursor:pointer;position:relative}.admonition-settings details>summary::-webkit-details-marker,.admonition-settings details>summary::marker{display:none!important}.admonition-settings details>summary>.collapser{position:absolute;top:50%;right:8px;transform:translateY(-50%);content:""}.admonition-settings details>summary>.collapser>.handle{transform:rotate(0);transition:transform .25s;background-color:currentColor;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-image:var(--admonition-details-icon);mask-image:var(--admonition-details-icon);width:20px;height:20px}.admonition-settings details[open]>summary>.collapser>.handle{transform:rotate(90deg)}.admonition-setting-warning{display:flex;gap:.25rem;align-items:center}.admonition-setting-warning.text-warning{color:var(--text-error)}.admonitions-nested-settings .setting-item{border:0px;padding-bottom:0}.admonitions-nested-settings{padding-bottom:18px}.admonitions-nested-settings[open] .setting-item-heading,.admonitions-nested-settings:not(details) .setting-item-heading{border-top:0px;border-bottom:1px solid var(--background-modifier-border)}.admonition.no-drop{box-shadow:none}.admonition.no-drop>.admonition-title.no-title+.admonition-content{margin-top:0;margin-bottom:0}.admonition.no-drop .admonition .admonition-content{border-right:1px solid rgba(var(--admonition-color),.2);border-bottom:1px solid rgba(var(--admonition-color),.2)}.admonition.no-drop .admonition .admonition-title.no-title+.admonition-content{border-top:1px solid rgba(var(--admonition-color),.2);margin-top:0;margin-bottom:0}.is-live-preview .admonition{margin-top:var(--admonition-margin-top-lp);margin-bottom:var(--admonition-margin-bottom-lp)}.is-live-preview .admonition-content>*{margin-top:0;margin-bottom:0}.is-live-preview .admonition-content>* br{display:none}.is-live-preview .admonition-content>*:first-child{margin-top:16px}.is-live-preview .admonition-content>*:last-child{margin-bottom:16px}.is-live-preview .admonition-content ul,.is-live-preview .admonition-content ol{white-space:normal}.is-live-preview .admonition-content .math-block>mjx-container{padding:0}.callout:not(.admonition).drop-shadow{box-shadow:0 .2rem .5rem var(--background-modifier-box-shadow)}.callout:not(.admonition) .no-title{display:none}
+ /** Status Bar **/
+
+.day-planner {
+    position: relative;
+}
+
+.day-planner .status-bar-item-segment:hover {
+    cursor: pointer;
+}
+
+.day-planner-progress-bar {
+    margin-top: 2px;
+    background-color: var(--text-muted);
+    border-radius: 4px;
+    min-width: 80px;
+    height: 16px;
+    float: left;
+    display: none;
+}
+
+.day-planner-progress-value {
+    background-color: var(--interactive-accent);
+    transition: 0.3s all linear;
+    border-radius: 4px;
+    height: 16px;
+    display: inline-block;
+}
+
+.day-planner-progress-value.green, .day-planner .progress-pie.green::before {
+    background-color: #4CAF50;
+}
+
+.day-planner .progress-pie.green {
+    background-image: linear-gradient(to right,transparent 50%, #4CAF50 0)
+}
+
+.day-planner-status-bar-text {
+    float: left;
+    margin-right: 10px;
+}
+
+.day-planner-status-card {
+    position: absolute;
+    top: -140px;
+    width: 300px;
+    background-color: var(--background-secondary-alt);
+    padding: 8px;
+    border-radius: 4px;
+    display: none;
+}
+
+.day-planner-status-card .arrow-down {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--background-secondary-alt);
+    width: 20px;
+    position: absolute;
+}
+
+.progress-pie.day-planner {
+    background-color: var(--text-muted);
+    float: left;
+    height: 20px;
+    margin: 0.3px 10px 0.3px 0;
+    width: 20px;
+    display: none;
+}
+
+.progress-pie.day-planner:after {
+    width: 80%;
+    height: 80%;
+}
+
+.progress-pie.day-planner:after {
+    color: transparent;
+    background-color: transparent;
+    font-size: 8px;
+    font-weight: 900;
+    line-height: 13px;
+}
+
+[data-type="timeline"] .view-content {
+    padding-bottom: 0;
+}
+
+
+/* CSS Progress Pie by Olivia Ng | MIT License | github.com/oliviale/css-progress-pie*/
+.progress-pie{width:60px;height:60px;border-radius:50%;background:#eee;background-image:-webkit-linear-gradient(left,transparent 50%,var(--interactive-accent) 0);background-image:linear-gradient(to right,transparent 50%,var(--interactive-accent) 0);position:relative;display:inline-block;margin:10px}.progress-pie::before{content:'';display:block;margin-left:50%;height:100%;border-radius:0 100% 100% 0/50%;background-color:inherit;-webkit-transform-origin:left;-ms-transform-origin:left;transform-origin:left}.progress-pie::after{content:attr(data-value);position:absolute;width:70%;height:70%;margin:auto;border-radius:50%;background-color:#fff;left:0;right:0;top:0;bottom:0;text-align:center;font:900 20px/41px Tahoma}.progress-pie[data-value="0"]:before{-webkit-transform:rotate(0turn);-ms-transform:rotate(0turn);transform:rotate(0turn)}.progress-pie[data-value="1"]:before{-webkit-transform:rotate(.01turn);-ms-transform:rotate(.01turn);transform:rotate(.01turn)}.progress-pie[data-value="2"]:before{-webkit-transform:rotate(.02turn);-ms-transform:rotate(.02turn);transform:rotate(.02turn)}.progress-pie[data-value="3"]:before{-webkit-transform:rotate(.03turn);-ms-transform:rotate(.03turn);transform:rotate(.03turn)}.progress-pie[data-value="4"]:before{-webkit-transform:rotate(.04turn);-ms-transform:rotate(.04turn);transform:rotate(.04turn)}.progress-pie[data-value="5"]:before{-webkit-transform:rotate(.05turn);-ms-transform:rotate(.05turn);transform:rotate(.05turn)}.progress-pie[data-value="6"]:before{-webkit-transform:rotate(.06turn);-ms-transform:rotate(.06turn);transform:rotate(.06turn)}.progress-pie[data-value="7"]:before{-webkit-transform:rotate(.07turn);-ms-transform:rotate(.07turn);transform:rotate(.07turn)}.progress-pie[data-value="8"]:before{-webkit-transform:rotate(.08turn);-ms-transform:rotate(.08turn);transform:rotate(.08turn)}.progress-pie[data-value="9"]:before{-webkit-transform:rotate(.09turn);-ms-transform:rotate(.09turn);transform:rotate(.09turn)}.progress-pie[data-value="10"]:before{-webkit-transform:rotate(.1turn);-ms-transform:rotate(.1turn);transform:rotate(.1turn)}.progress-pie[data-value="11"]:before{-webkit-transform:rotate(.11turn);-ms-transform:rotate(.11turn);transform:rotate(.11turn)}.progress-pie[data-value="12"]:before{-webkit-transform:rotate(.12turn);-ms-transform:rotate(.12turn);transform:rotate(.12turn)}.progress-pie[data-value="13"]:before{-webkit-transform:rotate(.13turn);-ms-transform:rotate(.13turn);transform:rotate(.13turn)}.progress-pie[data-value="14"]:before{-webkit-transform:rotate(.14turn);-ms-transform:rotate(.14turn);transform:rotate(.14turn)}.progress-pie[data-value="15"]:before{-webkit-transform:rotate(.15turn);-ms-transform:rotate(.15turn);transform:rotate(.15turn)}.progress-pie[data-value="16"]:before{-webkit-transform:rotate(.16turn);-ms-transform:rotate(.16turn);transform:rotate(.16turn)}.progress-pie[data-value="17"]:before{-webkit-transform:rotate(.17turn);-ms-transform:rotate(.17turn);transform:rotate(.17turn)}.progress-pie[data-value="18"]:before{-webkit-transform:rotate(.18turn);-ms-transform:rotate(.18turn);transform:rotate(.18turn)}.progress-pie[data-value="19"]:before{-webkit-transform:rotate(.19turn);-ms-transform:rotate(.19turn);transform:rotate(.19turn)}.progress-pie[data-value="20"]:before{-webkit-transform:rotate(.2turn);-ms-transform:rotate(.2turn);transform:rotate(.2turn)}.progress-pie[data-value="21"]:before{-webkit-transform:rotate(.21turn);-ms-transform:rotate(.21turn);transform:rotate(.21turn)}.progress-pie[data-value="22"]:before{-webkit-transform:rotate(.22turn);-ms-transform:rotate(.22turn);transform:rotate(.22turn)}.progress-pie[data-value="23"]:before{-webkit-transform:rotate(.23turn);-ms-transform:rotate(.23turn);transform:rotate(.23turn)}.progress-pie[data-value="24"]:before{-webkit-transform:rotate(.24turn);-ms-transform:rotate(.24turn);transform:rotate(.24turn)}.progress-pie[data-value="25"]:before{-webkit-transform:rotate(.25turn);-ms-transform:rotate(.25turn);transform:rotate(.25turn)}.progress-pie[data-value="26"]:before{-webkit-transform:rotate(.26turn);-ms-transform:rotate(.26turn);transform:rotate(.26turn)}.progress-pie[data-value="27"]:before{-webkit-transform:rotate(.27turn);-ms-transform:rotate(.27turn);transform:rotate(.27turn)}.progress-pie[data-value="28"]:before{-webkit-transform:rotate(.28turn);-ms-transform:rotate(.28turn);transform:rotate(.28turn)}.progress-pie[data-value="29"]:before{-webkit-transform:rotate(.29turn);-ms-transform:rotate(.29turn);transform:rotate(.29turn)}.progress-pie[data-value="30"]:before{-webkit-transform:rotate(.3turn);-ms-transform:rotate(.3turn);transform:rotate(.3turn)}.progress-pie[data-value="31"]:before{-webkit-transform:rotate(.31turn);-ms-transform:rotate(.31turn);transform:rotate(.31turn)}.progress-pie[data-value="32"]:before{-webkit-transform:rotate(.32turn);-ms-transform:rotate(.32turn);transform:rotate(.32turn)}.progress-pie[data-value="33"]:before{-webkit-transform:rotate(.33turn);-ms-transform:rotate(.33turn);transform:rotate(.33turn)}.progress-pie[data-value="34"]:before{-webkit-transform:rotate(.34turn);-ms-transform:rotate(.34turn);transform:rotate(.34turn)}.progress-pie[data-value="35"]:before{-webkit-transform:rotate(.35turn);-ms-transform:rotate(.35turn);transform:rotate(.35turn)}.progress-pie[data-value="36"]:before{-webkit-transform:rotate(.36turn);-ms-transform:rotate(.36turn);transform:rotate(.36turn)}.progress-pie[data-value="37"]:before{-webkit-transform:rotate(.37turn);-ms-transform:rotate(.37turn);transform:rotate(.37turn)}.progress-pie[data-value="38"]:before{-webkit-transform:rotate(.38turn);-ms-transform:rotate(.38turn);transform:rotate(.38turn)}.progress-pie[data-value="39"]:before{-webkit-transform:rotate(.39turn);-ms-transform:rotate(.39turn);transform:rotate(.39turn)}.progress-pie[data-value="40"]:before{-webkit-transform:rotate(.4turn);-ms-transform:rotate(.4turn);transform:rotate(.4turn)}.progress-pie[data-value="41"]:before{-webkit-transform:rotate(.41turn);-ms-transform:rotate(.41turn);transform:rotate(.41turn)}.progress-pie[data-value="42"]:before{-webkit-transform:rotate(.42turn);-ms-transform:rotate(.42turn);transform:rotate(.42turn)}.progress-pie[data-value="43"]:before{-webkit-transform:rotate(.43turn);-ms-transform:rotate(.43turn);transform:rotate(.43turn)}.progress-pie[data-value="44"]:before{-webkit-transform:rotate(.44turn);-ms-transform:rotate(.44turn);transform:rotate(.44turn)}.progress-pie[data-value="45"]:before{-webkit-transform:rotate(.45turn);-ms-transform:rotate(.45turn);transform:rotate(.45turn)}.progress-pie[data-value="46"]:before{-webkit-transform:rotate(.46turn);-ms-transform:rotate(.46turn);transform:rotate(.46turn)}.progress-pie[data-value="47"]:before{-webkit-transform:rotate(.47turn);-ms-transform:rotate(.47turn);transform:rotate(.47turn)}.progress-pie[data-value="48"]:before{-webkit-transform:rotate(.48turn);-ms-transform:rotate(.48turn);transform:rotate(.48turn)}.progress-pie[data-value="49"]:before{-webkit-transform:rotate(.49turn);-ms-transform:rotate(.49turn);transform:rotate(.49turn)}.progress-pie[data-value="50"]:before{-webkit-transform:rotate(.5turn);-ms-transform:rotate(.5turn);transform:rotate(.5turn)}.progress-pie[data-value="51"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.01turn);-ms-transform:rotate(.01turn);transform:rotate(.01turn)}.progress-pie[data-value="52"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.02turn);-ms-transform:rotate(.02turn);transform:rotate(.02turn)}.progress-pie[data-value="53"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.03turn);-ms-transform:rotate(.03turn);transform:rotate(.03turn)}.progress-pie[data-value="54"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.04turn);-ms-transform:rotate(.04turn);transform:rotate(.04turn)}.progress-pie[data-value="55"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.05turn);-ms-transform:rotate(.05turn);transform:rotate(.05turn)}.progress-pie[data-value="56"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.06turn);-ms-transform:rotate(.06turn);transform:rotate(.06turn)}.progress-pie[data-value="57"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.07turn);-ms-transform:rotate(.07turn);transform:rotate(.07turn)}.progress-pie[data-value="58"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.08turn);-ms-transform:rotate(.08turn);transform:rotate(.08turn)}.progress-pie[data-value="59"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.09turn);-ms-transform:rotate(.09turn);transform:rotate(.09turn)}.progress-pie[data-value="60"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.1turn);-ms-transform:rotate(.1turn);transform:rotate(.1turn)}.progress-pie[data-value="61"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.11turn);-ms-transform:rotate(.11turn);transform:rotate(.11turn)}.progress-pie[data-value="62"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.12turn);-ms-transform:rotate(.12turn);transform:rotate(.12turn)}.progress-pie[data-value="63"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.13turn);-ms-transform:rotate(.13turn);transform:rotate(.13turn)}.progress-pie[data-value="64"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.14turn);-ms-transform:rotate(.14turn);transform:rotate(.14turn)}.progress-pie[data-value="65"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.15turn);-ms-transform:rotate(.15turn);transform:rotate(.15turn)}.progress-pie[data-value="66"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.16turn);-ms-transform:rotate(.16turn);transform:rotate(.16turn)}.progress-pie[data-value="67"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.17turn);-ms-transform:rotate(.17turn);transform:rotate(.17turn)}.progress-pie[data-value="68"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.18turn);-ms-transform:rotate(.18turn);transform:rotate(.18turn)}.progress-pie[data-value="69"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.19turn);-ms-transform:rotate(.19turn);transform:rotate(.19turn)}.progress-pie[data-value="70"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.2turn);-ms-transform:rotate(.2turn);transform:rotate(.2turn)}.progress-pie[data-value="71"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.21turn);-ms-transform:rotate(.21turn);transform:rotate(.21turn)}.progress-pie[data-value="72"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.22turn);-ms-transform:rotate(.22turn);transform:rotate(.22turn)}.progress-pie[data-value="73"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.23turn);-ms-transform:rotate(.23turn);transform:rotate(.23turn)}.progress-pie[data-value="74"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.24turn);-ms-transform:rotate(.24turn);transform:rotate(.24turn)}.progress-pie[data-value="75"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.25turn);-ms-transform:rotate(.25turn);transform:rotate(.25turn)}.progress-pie[data-value="76"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.26turn);-ms-transform:rotate(.26turn);transform:rotate(.26turn)}.progress-pie[data-value="77"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.27turn);-ms-transform:rotate(.27turn);transform:rotate(.27turn)}.progress-pie[data-value="78"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.28turn);-ms-transform:rotate(.28turn);transform:rotate(.28turn)}.progress-pie[data-value="79"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.29turn);-ms-transform:rotate(.29turn);transform:rotate(.29turn)}.progress-pie[data-value="80"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.3turn);-ms-transform:rotate(.3turn);transform:rotate(.3turn)}.progress-pie[data-value="81"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.31turn);-ms-transform:rotate(.31turn);transform:rotate(.31turn)}.progress-pie[data-value="82"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.32turn);-ms-transform:rotate(.32turn);transform:rotate(.32turn)}.progress-pie[data-value="83"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.33turn);-ms-transform:rotate(.33turn);transform:rotate(.33turn)}.progress-pie[data-value="84"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.34turn);-ms-transform:rotate(.34turn);transform:rotate(.34turn)}.progress-pie[data-value="85"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.35turn);-ms-transform:rotate(.35turn);transform:rotate(.35turn)}.progress-pie[data-value="86"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.36turn);-ms-transform:rotate(.36turn);transform:rotate(.36turn)}.progress-pie[data-value="87"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.37turn);-ms-transform:rotate(.37turn);transform:rotate(.37turn)}.progress-pie[data-value="88"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.38turn);-ms-transform:rotate(.38turn);transform:rotate(.38turn)}.progress-pie[data-value="89"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.39turn);-ms-transform:rotate(.39turn);transform:rotate(.39turn)}.progress-pie[data-value="90"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.4turn);-ms-transform:rotate(.4turn);transform:rotate(.4turn)}.progress-pie[data-value="91"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.41turn);-ms-transform:rotate(.41turn);transform:rotate(.41turn)}.progress-pie[data-value="92"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.42turn);-ms-transform:rotate(.42turn);transform:rotate(.42turn)}.progress-pie[data-value="93"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.43turn);-ms-transform:rotate(.43turn);transform:rotate(.43turn)}.progress-pie[data-value="94"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.44turn);-ms-transform:rotate(.44turn);transform:rotate(.44turn)}.progress-pie[data-value="95"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.45turn);-ms-transform:rotate(.45turn);transform:rotate(.45turn)}.progress-pie[data-value="96"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.46turn);-ms-transform:rotate(.46turn);transform:rotate(.46turn)}.progress-pie[data-value="97"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.47turn);-ms-transform:rotate(.47turn);transform:rotate(.47turn)}.progress-pie[data-value="98"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.48turn);-ms-transform:rotate(.48turn);transform:rotate(.48turn)}.progress-pie[data-value="99"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.49turn);-ms-transform:rotate(.49turn);transform:rotate(.49turn)}.progress-pie[data-value="100"]:before{background-color:var(--interactive-accent);-webkit-transform:rotate(.5turn);-ms-transform:rotate(.5turn);transform:rotate(.5turn)} 
+.pandoc-plugin-error {
+    color: red;
+}
+ .timeline.line-2 .time-container::before, .timeline.line-2 .time-container::after {
+  right: -2.2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.timeline.line-2 .time-container::before {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.timeline.line-2 .time-container::after {
+  background: transparent;
+  border: 0.2rem solid var(--text-normal);
+  height: 0.8rem;
+  width: 0.8rem;
+  opacity: 0.15;
+}
+
+.timeline.line-2 .main-line {
+  width: 0.2rem;
+  opacity: 0.15;
+}
+
+.timeline.line-3 .time-container::before {
+  background: var(--timeline-active-color);
+  height: 1rem;
+  width: 1rem;
+  border: 0.3rem solid var(--background-primary);
+  right: -2.45rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.timeline.line-3 .time-container::after {
+  background: transparent;
+}
+
+.timeline.line-3 .main-line {
+  width: 0.3rem;
+  opacity: 0.15;
+}
+
+.timeline.line-4 .time-container::before, .timeline.line-4 .time-container::after {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.timeline.line-4 .time-container::before {
+  background: var(--text-normal);
+  height: 1.4rem;
+  width: 1.4rem;
+  right: -2.3rem;
+}
+
+.timeline.line-4 .time-container::after {
+  opacity: 1;
+  background: var(--timeline-active-color);
+  height: 0.77778rem;
+  width: 0.77778rem;
+  right: -1.98889rem;
+}
+
+.timeline.line-4 .main-line {
+  opacity: 1;
+  width: 0.2rem;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, var(--text-normal)), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(var(--text-normal) 60%, rgba(255, 255, 255, 0) 0%);
+  background-position: right;
+  background-size: 0.2rem 1.5rem;
+  background-repeat: repeat-y;
+}
+
+.timeline.line-5 .time-container::before, .timeline.line-5 .time-container::after {
+  top: 50%;
+}
+
+.timeline.line-5 .time-container::before {
+  width: 3rem;
+  height: 3rem;
+  right: -3.1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.timeline.line-5 .time-container::after {
+  width: 1rem;
+  height: 1rem;
+  right: 0;
+  -webkit-transform: translateY(-50%) translateX(2.1rem) rotate(45deg);
+          transform: translateY(-50%) translateX(2.1rem) rotate(45deg);
+}
+
+.timeline.line-5 .main-line {
+  width: 0.2rem;
+  opacity: 0.25;
+}
+
+.timeline.body-2 .info, .timeline.body-3 .info, .timeline.body-4 .info {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: var(--background-primary-alt);
+}
+
+.timeline.body-2 .info::after, .timeline.body-3 .info::after, .timeline.body-4 .info::after {
+  display: none;
+}
+
+.timeline.body-2 .info, .timeline.body-4 .info {
+  padding: 1.5rem;
+}
+
+.timeline.body-2 .time-container, .timeline.body-4 .time-container {
+  margin-top: 1.5rem;
+}
+
+.timeline.body-2 .info {
+  border-radius: 1.5rem;
+}
+
+.timeline.body-3 .info {
+  margin-left: 1rem;
+}
+
+.timeline.body-3 .info .title {
+  position: relative;
+  background: var(--timeline-active-color);
+  padding: 0 1.5rem;
+  margin: 0;
+}
+
+.timeline.body-3 .info .title::before {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  background: var(--timeline-active-color);
+  top: 0;
+  bottom: 0;
+  left: -1rem;
+  -webkit-clip-path: polygon(1rem 0, 100% 0, 100% 100%, 1rem 100%, 0 50%);
+          clip-path: polygon(1rem 0, 100% 0, 100% 100%, 1rem 100%, 0 50%);
+}
+
+.timeline.body-3 .info .description {
+  padding: 1.5rem;
+}
+
+.timeline.body-4 .info {
+  border-left: 0.3rem solid var(--timeline-active-color);
+}
+
+.timeline.spaced-lines .description p {
+  line-height: 1.7rem;
+}
+
+.timeline {
+  --timeline-active-color: var(--background-modifier-success);
+}
+
+.timeline.active-color-background-modifier-success {
+  --timeline-active-color: var(--background-modifier-success);
+}
+
+.timeline.active-color-background-modifier-error {
+  --timeline-active-color: var(--background-modifier-error);
+}
+
+.timeline.active-color-background-modifier-error-hover {
+  --timeline-active-color: var(--background-modifier-error-hover);
+}
+
+.timeline.active-color-text-accent {
+  --timeline-active-color: var(--text-accent);
+}
+
+.timeline.active-color-text-accent-hover {
+  --timeline-active-color: var(--text-accent-hover);
+}
+
+.timeline.active-color-text-error {
+  --timeline-active-color: var(--text-error);
+}
+
+.timeline.active-color-text-error-hover {
+  --timeline-active-color: var(--text-error-hover);
+}
+
+.timeline.active-color-text-selection {
+  --timeline-active-color: var(--text-selection);
+}
+
+.timeline.active-color-interactive-accent {
+  --timeline-active-color: var(--interactive-accent);
+}
+
+.timeline.active-color-interactive-accent-hover {
+  --timeline-active-color: var(--interactive-accent-hover);
+}
+
+.timeline.active-color-interactive-success {
+  --timeline-active-color: var(--interactive-success);
+}
+
+.timeline {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto 1fr;
+      grid-template-columns: auto auto 1fr;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  row-gap: 4.5rem;
+  margin: 2.3rem 0;
+}
+
+.timeline .time *, .timeline .title * {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.timeline .time-container {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  position: relative;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  text-align: right;
+}
+
+.timeline .time-container::before, .timeline .time-container::after {
+  content: ' ';
+  position: absolute;
+  height: 100%;
+  width: 0.5rem;
+  right: -2rem;
+  top: 0;
+}
+
+.timeline .time-container::before {
+  background-color: var(--background-primary);
+}
+
+.timeline .time-container::after {
+  background-color: var(--text-normal);
+  opacity: 0.25;
+}
+
+.timeline .info {
+  position: relative;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / span 1;
+}
+
+.timeline .info .title {
+  margin-bottom: 0.86667rem;
+}
+
+.timeline .info::after {
+  content: ' ';
+  position: absolute;
+  border-bottom: 0.1rem dashed var(--text-normal);
+  opacity: 0.1;
+  width: 100%;
+  height: 2.25rem;
+}
+
+.timeline .info:last-child::after {
+  display: none;
+}
+
+.timeline .main-line {
+  height: 100%;
+  width: 0.5rem;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  background-color: var(--text-normal);
+  opacity: 0.1;
+}
+
+.timeline .time-container .time > *:first-child, .timeline .time-container .time > *:last-child, .timeline .info .title > *:first-child, .timeline .info .title > *:last-child, .timeline .info .description > *:first-child, .timeline .info .description > *:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ .block-language-ActivityHistory {
+    margin: 1rem 0;
+}
+
+.selectYear {
+    border-color: none;
+}
+
+.HistoryBoard {
+    background-color: transparent !important;
+    padding: 10px;
+    border-radius: 14px;
+    width: auto;
+    height: auto;
+}
+
+.ObsidianHistoryBlock {
+    background-color: transparent !important;
+    border-radius: 14px;
+    width: auto;
+    height: auto;
+}
+
+.selectYear {
+    margin: 10px !important;
+    border-radius: 0 !important;
+    border-color: transparent !important;
+    background: #1b1b1b;
+    color: rgb(201, 201, 201);
+} .statusbar-pomo {
+    font-variant-numeric: tabular-nums;
+}
+
+.statusbar-pomo-logging:hover {
+    cursor: pointer;
+}
+ .container.svelte-pcimu8{--color-background-heading:transparent;--color-background-day:transparent;--color-background-weeknum:transparent;--color-background-weekend:transparent;--color-dot:var(--text-muted);--color-arrow:var(--text-muted);--color-button:var(--text-muted);--color-text-title:var(--text-normal);--color-text-heading:var(--text-muted);--color-text-day:var(--text-normal);--color-text-today:var(--interactive-accent);--color-text-weeknum:var(--text-muted)}.container.svelte-pcimu8{padding:0 8px}.container.is-mobile.svelte-pcimu8{padding:0}th.svelte-pcimu8{text-align:center}.weekend.svelte-pcimu8{background-color:var(--color-background-weekend)}.calendar.svelte-pcimu8{border-collapse:collapse;width:100%}th.svelte-pcimu8{background-color:var(--color-background-heading);color:var(--color-text-heading);font-size:0.6em;letter-spacing:1px;padding:4px;text-transform:uppercase} .nav.svelte-1vwr9dd.svelte-1vwr9dd{align-items:center;display:flex;margin:0.6em 0 1em;padding:0 8px;width:100%}.nav.is-mobile.svelte-1vwr9dd.svelte-1vwr9dd{padding:0}.title.svelte-1vwr9dd.svelte-1vwr9dd{color:var(--color-text-title);font-size:1.5em;margin:0}.is-mobile.svelte-1vwr9dd .title.svelte-1vwr9dd{font-size:1.3em}.month.svelte-1vwr9dd.svelte-1vwr9dd{font-weight:500;text-transform:capitalize}.year.svelte-1vwr9dd.svelte-1vwr9dd{color:var(--interactive-accent)}.right-nav.svelte-1vwr9dd.svelte-1vwr9dd{display:flex;justify-content:center;margin-left:auto}.reset-button.svelte-1vwr9dd.svelte-1vwr9dd{cursor:pointer;border-radius:4px;color:var(--text-muted);font-size:0.7em;font-weight:600;letter-spacing:1px;margin:0 4px;padding:0px 4px;text-transform:uppercase}.is-mobile.svelte-1vwr9dd .reset-button.svelte-1vwr9dd{display:none} .arrow.svelte-156w7na.svelte-156w7na{align-items:center;cursor:pointer;display:flex;justify-content:center;width:24px}.arrow.is-mobile.svelte-156w7na.svelte-156w7na{width:32px}.right.svelte-156w7na.svelte-156w7na{transform:rotate(180deg)}.arrow.svelte-156w7na svg.svelte-156w7na{color:var(--color-arrow);height:16px;width:16px} .day.svelte-q3wqg9{background-color:var(--color-background-day);border-radius:4px;color:var(--color-text-day);cursor:pointer;font-size:0.8em;height:100%;padding:4px;position:relative;text-align:center;transition:background-color 0.1s ease-in, color 0.1s ease-in;vertical-align:baseline}.day.svelte-q3wqg9:hover{background-color:var(--interactive-hover)}.day.active.svelte-q3wqg9:hover{background-color:var(--interactive-accent-hover)}.adjacent-month.svelte-q3wqg9{opacity:0.25}.today.svelte-q3wqg9{color:var(--color-text-today)}.day.svelte-q3wqg9:active,.active.svelte-q3wqg9,.active.today.svelte-q3wqg9{color:var(--text-on-accent);background-color:var(--interactive-accent)}.dot-container.svelte-q3wqg9{display:flex;flex-wrap:wrap;justify-content:center;line-height:6px;min-height:6px}  .dot.svelte-1widvzq,.hollow.svelte-1widvzq{display:inline-block;height:6px;width:6px;margin:0 1px}.filled.svelte-1widvzq{fill:var(--color-dot)}.active.filled.svelte-1widvzq{fill:var(--text-on-accent)}.hollow.svelte-1widvzq{fill:none;stroke:var(--color-dot)}.active.hollow.svelte-1widvzq{fill:none;stroke:var(--text-on-accent)}undefined
+</style>
+    </head>
+    <body>
+<h1 data-heading="Scratch App (Grow Ghana) - Privacy Policy">Scratch App (Grow Ghana) - Privacy Policy</h1>
+<p>This Application collects some Personal Data from its Users.</p>
+<p>This document can be printed for reference by using the print command in the settings of any browser.</p>
+<h2 data-heading="Policy summary">Policy summary</h2>
+<h3 data-heading="**Personal Data collected for the following purposes and using the following services:**"><strong>Personal Data collected for the following purposes and using the following services:</strong></h3>
+<ul>
+<li>
+<h4 data-heading="AdMob">AdMob</h4>
+<ul>
+<li>Personal Data: Cookies; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example); Usage Data</li>
+</ul>
+</li>
+<li>
+<h4 data-heading="Google Analytics for Firebase">Google Analytics for Firebase</h4>
+<ul>
+<li>Personal Data: Cookies; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example); Usage Data</li>
+</ul>
+</li>
+<li>
+<h4 data-heading="Firebase Crash Reporting">Firebase Crash Reporting</h4>
+<ul>
+<li>Personal Data: various types of Data as specified in the privacy policy of the service</li>
+</ul>
+</li>
+</ul>
+<h2 data-heading="**Contact Information**"><strong>Contact Information</strong></h2>
+<h4 data-heading="Owner and Data Controller">Owner and Data Controller</h4>
+<p>Grow GH EDU Initiative, Kokrobite-Tuba Road, Kokrobite, Greater Accra<br>
+<strong>Owner contact email:</strong> <a aria-label-position="top" aria-label="mailto:partner@growghana.org" rel="noopener" class="external-link" href="mailto:partner@growghana.org" target="_blank">partner@growghana.org</a></p>
+<h1 data-heading="Full Policy">Full Policy</h1>
+<h2 data-heading="Types of Data collected">Types of Data collected</h2>
+<p>Among the types of Personal Data that this Application collects, by itself or through third parties, there are: Cookies; Usage Data; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example).</p>
+<p>Complete details on each type of Personal Data collected are provided in the dedicated sections of this privacy policy or by specific explanation texts displayed prior to the Data collection.<br>
+Personal Data may be freely provided by the User, or, in case of Usage Data, collected automatically when using this Application.<br>
+Unless specified otherwise, all Data requested by this Application is mandatory and failure to provide this Data may make it impossible for this Application to provide its services. In cases where this Application specifically states that some Data is not mandatory, Users are free not to communicate this Data without consequences to the availability or the functioning of the Service.<br>
+Users who are uncertain about which Personal Data is mandatory are welcome to contact the Owner.<br>
+Any use of Cookies or of other tracking tools by this Application or by the owners of third-party services used by this Application serves the purpose of providing the Service required by the User, in addition to any other purposes described in the present document and in the Cookie Policy, if available.</p>
+<p>Users are responsible for any third-party Personal Data obtained, published or shared through this Application and confirm that they have the third party's consent to provide the Data to the Owner.</p>
+<h2 data-heading="Mode and Place of processing Data">Mode and Place of processing Data</h2>
+<h3 data-heading="Methods of Processing">Methods of Processing</h3>
+<p>The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data.<br>
+The Data processing is carried out using computers and/or IT enabled tools, following organizational procedures and modes strictly related to the purposes indicated. In addition to the Owner, in some cases, the Data may be accessible to certain types of persons in charge, involved with the operation of this Application (administration, sales, marketing, legal, system administration) or external parties (such as third-party technical service providers, mail carriers, hosting providers, IT companies, communications agencies) appointed, if necessary, as Data Processors by the Owner. The updated list of these parties may be requested from the Owner at any time.</p>
+<h3 data-heading="Legal Places of Processing">Legal Places of Processing</h3>
+<p>The Owner may process Personal Data relating to Users if one of the following applies:</p>
+<ul>
+<li>Users have given their consent for one or more specific purposes. Note: Under some legislations the Owner may be allowed to process Personal Data until the User objects to such processing (opt-out), without having to rely on consent or any other of the following legal bases. This, however, does not apply, whenever the processing of Personal Data is subject to European data protection law;</li>
+<li>provision of Data is necessary for the performance of an agreement with the User and/or for any pre-contractual obligations thereof;</li>
+<li>processing is necessary for compliance with a legal obligation to which the Owner is subject;</li>
+<li>processing is related to a task that is carried out in the public interest or in the exercise of official authority vested in the Owner;</li>
+<li>processing is necessary for the purposes of the legitimate interests pursued by the Owner or by a third party.</li>
+</ul>
+<p>In any case, the Owner will gladly help to clarify the specific legal basis that applies to the processing, and in particular whether the provision of Personal Data is a statutory or contractual requirement, or a requirement necessary to enter into a contract.</p>
+<h3 data-heading="Place">Place</h3>
+<p>The Data is processed at the Owner's operating offices and in any other places where the parties involved in the processing are located.  </p>
+<p>&nbsp;<br>
+Depending on the User's location, data transfers may involve transferring the User's Data to a country other than their own. To find out more about the place of processing of such transferred Data, Users can check the section containing details about the processing of Personal Data.</p>
+<p>Users are also entitled to learn about the legal basis of Data transfers to a country outside the European Union or to any international organization governed by public international law or set up by two or more countries, such as the UN, and about the security measures taken by the Owner to safeguard their Data.  </p>
+<p>&nbsp;<br>
+If any such transfer takes place, Users can find out more by checking the relevant sections of this document or inquire with the Owner using the information provided in the contact section.</p>
+<h3 data-heading="Retention Time">Retention Time</h3>
+<p>Personal Data shall be processed and stored for as long as required by the purpose they have been collected for.</p>
+<p>Therefore:</p>
+<ul>
+<li>Personal Data collected for purposes related to the performance of a contract between the Owner and the User shall be retained until such contract has been fully performed.</li>
+<li>Personal Data collected for the purposes of the Owners legitimate interests shall be retained as long as needed to fulfill such purposes. Users may find specific information regarding the legitimate interests pursued by the Owner within the relevant sections of this document or by contacting the Owner.</li>
+</ul>
+<p>The Owner may be allowed to retain Personal Data for a longer period whenever the User has given consent to such processing, as long as such consent is not withdrawn. Furthermore, the Owner may be obliged to retain Personal Data for a longer period whenever required to do so for the performance of a legal obligation or upon order of an authority.  </p>
+<p>&nbsp;<br>
+Once the retention period expires, Personal Data shall be deleted. Therefore, the right of access, the right to erasure, the right to rectification and the right to data portability cannot be enforced after expiration of the retention period.</p>
+<h2 data-heading="The purposes of processing">The purposes of processing</h2>
+<p>The Data concerning the User is collected to allow the Owner to provide its Service, comply with its legal obligations, respond to enforcement requests, protect its rights and interests (or those of its Users or third parties), detect any malicious or fraudulent activity, as well as the following: Advertising, Analytics and Infrastructure monitoring.</p>
+<p>For specific information about the Personal Data used for each purpose, the User may refer to the section Detailed information on the processing of Personal Data.</p>
+<h2 data-heading="Detailed information on the processing of Personal Data">Detailed information on the processing of Personal Data</h2>
+<p>Personal Data is collected for the following purposes and using the following services:</p>
+<ul>
+<li>
+<h4 data-heading="**Advertising**"><strong>Advertising</strong></h4>
+<ul>
+<li>This type of service allows User Data to be utilized for advertising communication purposes displayed in the form of banners and other advertisements on this Application, possibly based on User interests.<br>
+This does not mean that all Personal Data are used for this purpose. Information and conditions of use are shown below.<br>
+Some of the services listed below may use Cookies to identify Users or they may use the behavioral re-targeting technique, i.e. displaying ads tailored to the User’s interests and behavior, including those detected outside this Application. For more information, please check the privacy policies of the relevant services.<br>
+In addition to any opt out offered by any of the services below, the User may opt out of a third-party service's use of cookies by visiting the <a aria-label-position="top" aria-label="http://optout.networkadvertising.org/" rel="noopener" class="external-link" title="http://optout.networkadvertising.org/" href="http://optout.networkadvertising.org/" target="_blank">Network Advertising Initiative opt-out page</a>.</li>
+</ul>
+</li>
+<li>
+<h4 data-heading="**AdMob (Google Inc.)**"><strong>AdMob (Google Inc.)</strong></h4>
+<ul>
+<li>AdMob is an advertising service provided by AdMob Google Inc.&nbsp;<strong>In order to understand Google's use of Data, consult</strong> <a aria-label-position="top" aria-label="https://www.google.com/policies/privacy/partners/" rel="noopener" class="external-link" title="https://www.google.com/policies/privacy/partners/" href="https://www.google.com/policies/privacy/partners/" target="_blank"><strong>Google's partner policy</strong></a>.</li>
+<li>Personal Data processed: Cookies; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example); Usage Data.</li>
+<li>Place of processing: United States – <a aria-label-position="top" aria-label="https://www.google.com/policies/technologies/ads/" rel="noopener" class="external-link" title="https://www.google.com/policies/technologies/ads/" href="https://www.google.com/policies/technologies/ads/" target="_blank">Privacy Policy</a> – <a aria-label-position="top" aria-label="https://www.google.com/settings/ads" rel="noopener" class="external-link" title="https://www.google.com/settings/ads" href="https://www.google.com/settings/ads" target="_blank">Opt Out</a>.</li>
+</ul>
+</li>
+<li>
+<h4 data-heading="**Analytics**"><strong>Analytics</strong></h4>
+<ul>
+<li>The services contained in this section enable the Owner to monitor and analyze web traffic and can be used to keep track of User behavior.</li>
+</ul>
+</li>
+<li>
+<h4 data-heading="**Google Analytics for Firebase (Google LLC)**"><strong>Google Analytics for Firebase (Google LLC)</strong></h4>
+<ul>
+<li>Google Analytics for Firebase or Firebase Analytics is an analytics service provided by Google LLC.&nbsp;<strong>In order to understand Google's use of Data, consult</strong> <a aria-label-position="top" aria-label="https://www.google.com/policies/privacy/partners/" rel="noopener" class="external-link" title="https://www.google.com/policies/privacy/partners/" href="https://www.google.com/policies/privacy/partners/" target="_blank"><strong>Google's partner policy</strong></a>.</li>
+<li>Firebase Analytics may share Data with other tools provided by Firebase, such as Crash Reporting, Authentication, Remote Config or Notifications. The User may check this privacy policy to find a detailed explanation about the other tools used by the Owner.</li>
+<li>This Application uses identifiers for mobile devices and technologies similar to cookies to run the Firebase Analytics service.</li>
+<li>Users may opt-out of certain Firebase features through applicable device settings, such as the device advertising settings for mobile phones or by following the instructions in other Firebase related sections of this privacy policy, if available.</li>
+<li>Personal Data processed: Cookies; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example); Usage Data.</li>
+<li>Place of processing: United States – <a aria-label-position="top" aria-label="https://policies.google.com/privacy" rel="noopener" class="external-link" title="https://policies.google.com/privacy" href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.</li>
+</ul>
+</li>
+<li>
+<h4 data-heading="**Infrastructure monitoring**"><strong>Infrastructure monitoring</strong></h4>
+<ul>
+<li>This type of service allows this Application to monitor the use and behavior of its components so its performance, operation, maintenance and troubleshooting can be improved.<br>
+Which Personal Data are processed depends on the characteristics and mode of implementation of these services, whose function is to filter the activities of this Application.</li>
+</ul>
+</li>
+<li>
+<h4 data-heading="**Firebase Crash Reporting (Google Inc.)**"><strong>Firebase Crash Reporting (Google Inc.)</strong></h4>
+<ul>
+<li>Firebase Crash Reporting is a monitoring service provided by Google, Inc.</li>
+<li>Personal Data processed: various types of Data as specified in the privacy policy of the service.</li>
+<li>Place of processing: United States – <a aria-label-position="top" aria-label="https://www.google.com/policies/privacy/" rel="noopener" class="external-link" title="https://www.google.com/policies/privacy/" href="https://www.google.com/policies/privacy/" target="_blank">Privacy Policy</a>.</li>
+</ul>
+</li>
+</ul>
+<h2 data-heading="The rights of Users">The rights of Users</h2>
+<p>Users may exercise certain rights regarding their Data processed by the Owner.<br>
+In particular, Users have the right to do the following:</p>
+<ul>
+<li>
+<p><strong>Withdraw their consent at any time.</strong> Users have the right to withdraw consent where they have previously given their consent to the processing of their Personal Data.</p>
+</li>
+<li>
+<p><strong>Object to processing of their Data.</strong> Users have the right to object to the processing of their Data if the processing is carried out on a legal basis other than consent. Further details are provided in the dedicated section below.</p>
+</li>
+<li>
+<p><strong>Access their Data.</strong> Users have the right to learn if Data is being processed by the Owner, obtain disclosure regarding certain aspects of the processing and obtain a copy of the Data undergoing processing.</p>
+</li>
+<li>
+<p><strong>Verify and seek rectification.</strong> Users have the right to verify the accuracy of their Data and ask for it to be updated or corrected.</p>
+</li>
+<li>
+<p><strong>Restrict the processing of their Data.</strong> Users have the right, under certain circumstances, to restrict the processing of their Data. In this case, the Owner will not process their Data for any purpose other than storing it.</p>
+</li>
+<li>
+<p><strong>Have their Personal Data deleted or otherwise removed.</strong> Users have the right, under certain circumstances, to obtain the erasure of their Data from the Owner.</p>
+</li>
+<li>
+<p><strong>Receive their Data and have it transferred to another controller.</strong> Users have the right to receive their Data in a structured, commonly used and machine readable format and, if technically feasible, to have it transmitted to another controller without any hindrance. This provision is applicable provided that the Data is processed by automated means and that the processing is based on the User's consent, on a contract which the User is part of or on pre-contractual obligations thereof.</p>
+</li>
+<li>
+<p><strong>Lodge a complaint.</strong> Users have the right to bring a claim before their competent data protection authority.</p>
+</li>
+</ul>
+<h3 data-heading="**Details about the right to object to processing**"><strong>Details about the right to object to processing</strong></h3>
+<p>Where Personal Data is processed for a public interest, in the exercise of an official authority vested in the Owner or for the purposes of the legitimate interests pursued by the Owner, Users may object to such processing by providing a ground related to their particular situation to justify the objection.</p>
+<p>Users must know that, however, should their Personal Data be processed for direct marketing purposes, they can object to that processing at any time without providing any justification. To learn, whether the Owner is processing Personal Data for direct marketing purposes, Users may refer to the relevant sections of this document.</p>
+<h3 data-heading="**How to exercise these rights**"><strong>How to exercise these rights</strong></h3>
+<p>Any requests to exercise User rights can be directed to the Owner through the contact details provided in this document. These requests can be exercised free of charge and will be addressed by the Owner as early as possible and always within one month.</p>
+<h2 data-heading="**Cookie Policy**"><strong>Cookie Policy</strong></h2>
+<p>This Application uses Trackers. To learn more, the User may consult the <a aria-label-position="top" aria-label="http://www.iubenda.com/privacy-policy/20235395/cookie-policy" rel="noopener" class="external-link" title="Cookie Policy" href="http://www.iubenda.com/privacy-policy/20235395/cookie-policy" target="_blank">Cookie Policy</a>.</p>
+<h2 data-heading="**Additional information about Data collection and processing**"><strong>Additional information about Data collection and processing</strong></h2>
+<h3 data-heading="**Legal action**"><strong>Legal action</strong></h3>
+<p>The User's Personal Data may be used for legal purposes by the Owner in Court or in the stages leading to possible legal action arising from improper use of this Application or the related Services.<br>
+The User declares to be aware that the Owner may be required to reveal personal data upon request of public authorities.</p>
+<h3 data-heading="**Additional information about User's Personal Data**"><strong>Additional information about User's Personal Data</strong></h3>
+<p>In addition to the information contained in this privacy policy, this Application may provide the User with additional and contextual information concerning particular Services or the collection and processing of Personal Data upon request.</p>
+<h3 data-heading="**System logs and maintenance**"><strong>System logs and maintenance</strong></h3>
+<p>For operation and maintenance purposes, this Application and any third-party services may collect files that record interaction with this Application (System logs) use other Personal Data (such as the IP Address) for this purpose.</p>
+<h3 data-heading="**Information not contained in this policy**"><strong>Information not contained in this policy</strong></h3>
+<p>More details concerning the collection or processing of Personal Data may be requested from the Owner at any time. Please see the contact information at the beginning of this document.</p>
+<h3 data-heading="**How Do Not Track requests are handled**"><strong>How Do Not Track requests are handled</strong></h3>
+<p>This Application does not support Do Not Track requests.<br>
+To determine whether any of the third-party services it uses honor the Do Not Track requests, please read their privacy policies.</p>
+<h3 data-heading="**Changes to this privacy policy**"><strong>Changes to this privacy policy</strong></h3>
+<p>The Owner reserves the right to make changes to this privacy policy at any time by notifying its Users on this page and possibly within this Application and/or - as far as technically and legally feasible - sending a notice to Users via any contact information available to the Owner. It is strongly recommended to check this page often, referring to the date of the last modification listed at the bottom.  </p>
+<p>&nbsp;<br>
+Should the changes affect processing activities performed on the basis of the Userâ€™s consent, the Owner shall collect new consent from the User, where required.</p>
+<h3 data-heading="**Definitions and legal references**"><strong>Definitions and legal references</strong></h3>
+<h4 data-heading="**Personal Data (or Data)**"><strong>Personal Data (or Data)</strong></h4>
+<p>Any information that directly, indirectly, or in connection with other information including a personal identification number allows for the identification or identifiability of a natural person.</p>
+<h4 data-heading="**Usage Data**"><strong>Usage Data</strong></h4>
+<p>Information collected automatically through this Application (or third-party services employed in this Application), which can include: the IP addresses or domain names of the computers utilized by the Users who use this Application, the URI addresses (Uniform Resource Identifier), the time of the request, the method utilized to submit the request to the server, the size of the file received in response, the numerical code indicating the status of the server's answer (successful outcome, error, etc.), the country of origin, the features of the browser and the operating system utilized by the User, the various time details per visit (e.g., the time spent on each page within the Application) and the details about the path followed within the Application with special reference to the sequence of pages visited, and other parameters about the device operating system and/or the User's IT environment.</p>
+<h4 data-heading="**User**"><strong>User</strong></h4>
+<p>The individual using this Application who, unless otherwise specified, coincides with the Data Subject.</p>
+<h4 data-heading="**Data Subject**"><strong>Data Subject</strong></h4>
+<p>The natural person to whom the Personal Data refers.</p>
+<h4 data-heading="**Data Processor (or Data Supervisor)**"><strong>Data Processor (or Data Supervisor)</strong></h4>
+<p>The natural or legal person, public authority, agency or other body which processes Personal Data on behalf of the Controller, as described in this privacy policy.</p>
+<h4 data-heading="**Data Controller (or Owner)**"><strong>Data Controller (or Owner)</strong></h4>
+<p>The natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of Personal Data, including the security measures concerning the operation and use of this Application. The Data Controller, unless otherwise specified, is the Owner of this Application.</p>
+<h4 data-heading="**This Application**"><strong>This Application</strong></h4>
+<p>The means by which the Personal Data of the User is collected and processed.</p>
+<h4 data-heading="**Service**"><strong>Service</strong></h4>
+<p>The service provided by this Application as described in the relative terms (if available) and on this site/application.</p>
+<h4 data-heading="**European Union (or EU)**"><strong>European Union (or EU)</strong></h4>
+<p>Unless otherwise specified, all references made within this document to the European Union include all current member states to the European Union and the European Economic Area.</p>
+<h4 data-heading="**Cookie**"><strong>Cookie</strong></h4>
+<p>Cookies are Trackers consisting of small sets of data stored in the User's browser.</p>
+<h4 data-heading="**Tracker**"><strong>Tracker</strong></h4>
+<p>Tracker indicates any technology - e.g Cookies, unique identifiers, web beacons, embedded scripts, e-tags and fingerprinting - that enables the tracking of Users, for example by accessing or storing information on the User’s device.</p>
+<h4 data-heading="**Legal information**"><strong>Legal information</strong></h4>
+<p>This privacy statement has been prepared based on provisions of multiple legislations, including Art. 13/14 of Regulation (EU) 2016/679 (General Data Protection Regulation).</p>
+<p>This privacy policy relates solely to this Application, if not stated otherwise within this document.</p>
+<p>Latest update: March 30, 2022</p>
+    </body>
+</html>
